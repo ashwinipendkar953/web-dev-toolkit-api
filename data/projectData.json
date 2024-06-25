@@ -1,0 +1,34 @@
+[
+  {
+    "projectImage": "https://i.postimg.cc/tJd4s1Ln/bill-Gates.png",
+    "projectName": "Bill Gates Tribute",
+    "category": "HTML",
+    "description": "Simple navbar, same page navigation, header, footer, section and lists",
+    "replUrl": "https://replit.com/@AshwiniPendkar1/RC1Exercise1",
+    "githubUrl": "https://github.com/ashwinipendkar953/BillGates-Tribute",
+  },
+  {
+    "projectImage": "https://i.postimg.cc/FRLRQCpZ/Mumbai-City.png",
+    "projectName": "Mumbai City Guide",
+    "category": "Bootstrap",
+    "description": "Simple responsive nav, background-colors, cards, typography",
+    "replUrl": "https://replit.com/@AshwiniPendkar1/RC1Exercise4",
+    "githubUrl": "https://github.com/ashwinipendkar953/Mumbai-City-Guide",
+  },
+  {
+    "projectImage": "https://i.postimg.cc/nL5zgf4r/Travel-Database.png",
+    "projectName": "Travel Database",
+    "category": "Bootstrap",
+    "description": "Responsive navbar, grid layouts, dynamic details",
+    "replUrl": "https://replit.com/@AshwiniPendkar1/RC1Exercise5",
+    "githubUrl": "https://github.com/ashwinipendkar953/Travel-Database",
+  },
+  {
+    "projectImage": "https://i.postimg.cc/Lsh5x8ZG/Food-Database.png",
+    "projectName": "Food Database",
+    "category": "Bootstrap",
+    "description": "Responsive navbar, grid layouts, dynamic details",
+    "replUrl": "https://replit.com/@AshwiniPendkar1/RC1Exercise6",
+    "githubUrl": "https://github.com/ashwinipendkar953/Food-Database",
+  }
+]
