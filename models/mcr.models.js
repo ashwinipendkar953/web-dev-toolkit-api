@@ -6,8 +6,13 @@ const mcrSchema = new mongoose.Schema(
     mcrLiveUrl: String,
     category: String,
     description: String,
+    instructionsUrl: String,
     replUrl: String,
     githubUrl: String,
+    isImp: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );

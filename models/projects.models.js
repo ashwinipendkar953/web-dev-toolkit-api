@@ -6,8 +6,13 @@ const projectSchema = new mongoose.Schema(
     projectLiveUrl: String,
     category: String,
     description: String,
+    instructionsUrl: String,
     replUrl: String,
     githubUrl: String,
+    isImp: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );
