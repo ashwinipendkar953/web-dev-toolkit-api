@@ -10,7 +10,10 @@ const projectSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    replUrl: String,
+    replUrl: {
+      type: String,
+      default: "",
+    },
     githubUrl: String,
     isImp: {
       type: Boolean,
