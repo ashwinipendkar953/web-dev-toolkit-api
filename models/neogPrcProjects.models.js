@@ -6,7 +6,10 @@ const projectSchema = new mongoose.Schema(
     projectLiveUrl: String,
     category: String,
     description: String,
-    instructionsUrl: String,
+    instructionsUrl: {
+      type: String,
+      default: "",
+    },
     replUrl: String,
     githubUrl: String,
     isImp: {
@@ -17,6 +20,6 @@ const projectSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const Project = mongoose.model("Project", projectSchema);
+const NeogPrcProject = mongoose.model("NeogPrcProject", projectSchema);
 
-module.exports = Project;
+module.exports = NeogPrcProject;

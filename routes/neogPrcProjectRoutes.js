@@ -1,12 +1,12 @@
 const express = require("express");
-const Project = require("../models/projects.models");
+const NeogPrcProject = require("../models/neogPrcProjects.models");
 
 const router = express.Router();
 
 // Route to create a new product
-router.post("/projects", async (req, res) => {
+router.post("/neog-prc-projects", async (req, res) => {
   try {
-    const newProject = new Project(req.body);
+    const newProject = new NeogPrcProject(req.body);
     await newProject.save();
     res.status(201).send(newProject);
   } catch (error) {
@@ -15,10 +15,10 @@ router.post("/projects", async (req, res) => {
 });
 
 // Route to get all projects
-router.get("/projects", async (req, res) => {
+router.get("/neog-prc-projects", async (req, res) => {
   try {
-    const projects = await Project.find();
-    res.status(200).send(projects);
+    const neogPrcProjects = await NeogPrcProject.find();
+    res.status(200).send(neogPrcProjects);
   } catch (error) {
     res.status(500).send(error.message);
   }

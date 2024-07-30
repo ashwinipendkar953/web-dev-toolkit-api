@@ -1,12 +1,12 @@
 const express = require("express");
-const MCR = require("../models/mcr.models");
+const neogMcr = require("../models/neogMcr.models");
 
 const router = express.Router();
 
 // route to create new mcr
-router.post("/mcr", async (req, res) => {
+router.post("/neog-mcr", async (req, res) => {
   try {
-    const newMCR = await MCR(req.body);
+    const newMCR = await neogMcr(req.body);
     await newMCR.save();
     res.status(201).send(newMCR);
   } catch (error) {
@@ -15,13 +15,13 @@ router.post("/mcr", async (req, res) => {
 });
 
 // route to get all mcr
-router.get("/mcr", async (req, res) => {
+router.get("/neog-mcr", async (req, res) => {
   try {
-    const mcr = await MCR.find();
+    const mcr = await neogMcr.find();
     if (mcr.length > 0) {
       res.status(201).json(mcr);
     } else {
-      res.status(404).json({ message: "Failed to fetch mcr. " });
+      res.status(404).json({ message: "Failed to fetch neog mcr. " });
     }
   } catch (error) {
     res.status(500).json({ error });

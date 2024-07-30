@@ -6,7 +6,10 @@ const mcrSchema = new mongoose.Schema(
     mcrLiveUrl: String,
     category: String,
     description: String,
-    instructionsUrl: String,
+    instructionsUrl: {
+      type: String,
+      default: "",
+    },
     replUrl: String,
     githubUrl: String,
     isImp: {
@@ -17,6 +20,6 @@ const mcrSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const MCR = mongoose.model("MCR", mcrSchema);
+const neogMcr = mongoose.model("neogMcr", mcrSchema);
 
-module.exports = MCR;
+module.exports = neogMcr;

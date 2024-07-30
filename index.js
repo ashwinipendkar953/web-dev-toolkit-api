@@ -1,7 +1,7 @@
 const express = require("express");
 const { initializeDatabase } = require("./db/db.conn");
-const projectRoutes = require("./routes/projectRoutes");
-const mcrRoutes = require("./routes/mcrRoutes");
+const neogPrcProjectRoutes = require("./routes/neogPrcProjectRoutes");
+const neogMcrRoutes = require("./routes/neogMcrRoutes");
 const cors = require("cors");
 require("dotenv").config();
 const app = express();
@@ -17,8 +17,8 @@ app.use(express.json());
 initializeDatabase();
 
 // Use the peoject routes
-app.use("/api", projectRoutes);
-app.use("/api", mcrRoutes);
+app.use("/api", neogPrcProjectRoutes);
+app.use("/api", neogMcrRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
